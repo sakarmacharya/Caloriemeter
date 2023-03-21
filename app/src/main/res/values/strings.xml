@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CalorieMeter</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Food</string>
+    <string name="title_notifications">Profile</string>
+    <string name="first_launch">isFirstLaunch</string>
+
+    <string name="food_type">foodType</string>
+    <string name="chart">Chart</string>
+    <string name="title_chart">Chart</string>
+    <string name="required">Required</string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="app.sk.caloriemeter.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="app.sk.caloriemeter.ui.addfood.AddFoodFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_add_food" />
+
+    <fragment
+        android:id="@+id/navigation_chart"
+        android:name="app.sk.caloriemeter.ui.chart.ChartFragment"
+        android:label="@string/chart"
+        tools:layout="@layout/fragment_chart" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="app.sk.caloriemeter.ui.profile.ProfileFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChartDay"
+        android:layout_width="0dp"
+        android:layout_height="510dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnWeek" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChartMonth"
+        android:layout_width="0dp"
+        android:layout_height="510dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnWeek" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChartWeek"
+        android:layout_width="0dp"
+        android:layout_height="510dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnWeek" />
+
+    <Button
+        android:id="@+id/btnToday"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="Today"
+        android:textColor="@color/purple_500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnWeek"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:text="Week"
+        android:textColor="@color/purple_500"
+        app:layout_constraintEnd_toStartOf="@+id/btnMonth"
+        app:layout_constraintStart_toEndOf="@+id/btnToday"
+        app:layout_constraintTop_toTopOf="@+id/btnToday" />
+
+    <Button
+        android:id="@+id/btnMonth"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:text="Month"
+        android:textColor="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnWeek" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
